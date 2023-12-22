@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Lab 7</title>
+        <title>Lab 7 - </title>
 
          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -47,7 +47,7 @@
 		
           
 		  
-		$.getJson("chilm.geoJson",function(data){
+		$.getJSON("chilm.geojson",function(data){
 		
 			var locations = data.features.map(function(chilm) {
 				var location = chilm.geometry.coordinates.reverse();
