@@ -48,10 +48,10 @@
 		
           
 		  
-		$.getJson("chi_landmarks.geoJson",function(data){
+		$.getJson("chilm.geoJson",function(data){
 		
-			var locations = data.features.map(function(chi_landmarks) {
-				var location = chi_landmarks.geometry.coordinates.reverse();
+			var locations = data.features.map(function(chilm) {
+				var location = chilm.geometry.coordinates.reverse();
 				location.push(1);
 				return location;			
 			});
