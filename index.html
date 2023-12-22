@@ -50,7 +50,7 @@
 		  
 		$.getJson("chi_landmarks.geoJson",function(marks){
 		
-			var locations = marks.features.map(function(chi_landmarks)) {
+			var locations = marks.features.map(function(chi_landmarks) {
 				var location = chi_landmarks.geometry.coordinates.reverse();
 				location.push(1);
 				return location;			
